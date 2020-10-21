@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- No olvidarme del type="module" -->
+    <script src="./js/scripts.js" type="module" ></script>
+    <title>Lista de Personas</title>
+  </head>
+  <body>
+    <header>
+
+      <img src="./image/logo.png" alt="imagen de autos">
+      <nav>
+          <a href="#">Nosotros</a>
+          <a href="#">Anuncios</a>
+          <a href="#">Blog</a>
+          <a href="#">Contacto</a>
+      </nav>
+  </header>
+  <section id="titulo">
+      <h1>ADMINISTRACION</h1>
+      <img src="./image/autos.jpg" alt="imagen de autos">
+  </section>
+  <br>
+  <br>
+  <div class="container">
+    
+    <fieldset>
+        <legend>Información Del Anuncio</legend>
+        <form id="formAnuncio" action="#">
+            <label>TITULO:</label><br>
+            <input type="text" id="txtTitulo" placeholder="Titulo" autocomplete="off"><br><br>
+            <label>TRANSACCION:</label><br>
+            <select id="cmbTransaccion">
+                <option value="-">----  Elegir Transaccion ----</option>
+                <option value="venta">Venta</option>
+                <option value="alquiler">Alquiler</option>
+                <option value="permuta">Permuta</option>
+            </select><br><br>
+
+            <label>DESCRIPCION:</label><br>
+            <input type="text" id="txtDescripcion" placeholder="Descripcion" autocomplete="off"><br><br>
+
+            <label>PRECIO:</label><br>
+            <input type="number" min="1" id="txtPrecio" placeholder="Precio" autocomplete="off"><br><br>
+            
+            <div id="containerIconInput">
+                <img src="./image/puerta.png" alt="door icon" class="iconoInput"> 
+                <input type="number" min="1" id="txtCantPuertas" placeholder="Puertas" autocomplete="off"><br><br>
+                <img src="./image/velocimetro.png" alt="speedometer icon" class="iconoInput"> 
+                <input type="number" min="1" id="txtCantKms" placeholder="KMs" autocomplete="off"><br><br>
+                <img src="./image/motor.png" alt="motor icon" class="iconoInput"> 
+                <input type="number" min="1" id="txtPotencia" placeholder="Potencia" autocomplete="off"><br><br>
+            </div>
+        </form>
+    </fieldset>
+</div>
+        
+        <br /><br /><br /><br />
+      </form>
+    </section>
+    
+    <div class="buttonContainer container">
+      <button class="botones" id="btnGuardar"><img src="./image/save.png" alt="save icon" class="iconoBotones"> Guardar</button>
+      <button class="botones" id="btnModificar"><img src="./image/edit.png" alt="modify icon" class="iconoBotones"> Modificar</button>
+      <button class="botones" id="btnEliminar"><img src="./image/delete.png" alt="delete icon" class="iconoBotones"> Eliminar</button>
+      <button class="botones" id="btnCancelar"><img src="./image/go-back-left-arrow.png" alt="cancel icon" class="iconoBotones"> Cancelar</button>
+    </div>
+
+    
+     
+    <br>
+    <section class="container">
+      <div id="divTabla"></div>
+    </section>
+    <footer>
+      <nav class="navFooter">
+        <a href="#">Nosotros</a>
+        <a href="#">Anuncios</a>
+        <a href="#">Blog</a>
+        <a href="#">Contacto</a>
+    </nav>
+      <p>Todo los derechos reservados  2020 &copy;</p>
+    </footer>
+  </body>
+</html>

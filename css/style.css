@@ -1,0 +1,155 @@
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+
+header > img {
+     
+   
+   max-width: 100%;
+
+  
+}
+
+input {
+    border: none;
+    background-color: lightgray;
+    width: 100%;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+fieldset {
+    width: 75%;
+}
+#cmbTransaccion{
+    background-color: lightgray;
+}
+#containerIconInput {
+    display: flex;
+    direction: row;
+}
+
+#containerIconInput > input {
+    height: 25px;
+    margin-left: 5px;
+}
+
+table{
+    border-collapse: collapse;
+}
+table, th, td{
+    border: 1px solid black;
+    padding: 5px;
+}
+thead{
+   background-color: coral;
+}
+
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+button {
+    top: 5px;
+    position: relative;
+    display: inline-block;
+    border: none;
+    padding: 7px 11px;
+    background-color: green;
+    color: white;
+}
+.botones {
+    margin-left: 10px;
+}
+#btnModificar, #btnEliminar, #btnCancelar {
+    display: none;
+}
+
+.botones:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+.iconoBotones {
+   
+    height: 18px;
+    width: 18px;
+}
+
+select{
+    width: 100%;
+}
+header{
+  
+    position: sticky;
+    top: 0px;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+#titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo > img {
+    height: auto;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+}
+  
+nav a {
+    margin-left: 30px;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+footer {
+    margin-top: 20px;
+   
+}
+label{
+    font-weight: bold;
+}  
+footer p {
+    color: white;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.iconoInput {
+    height: 30px;
+    width: 30px;
+}
+
+#spinner {
+    margin-top: 20px;
+   
+    display: flex;
+    justify-content: center;
+}
